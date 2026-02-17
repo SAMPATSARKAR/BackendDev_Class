@@ -44,7 +44,7 @@ let server = http.createServer((req, res) => {
     } 
     else if (req.url === "/fetch") {
 
-        fs.readFile("./items.json", "utf-8", (err, data) => {
+        fs.readFile("items.json", "utf-8", (err, data) => {
             if (err) {
                 res.writeHead(404, { "Content-Type": "text/html" });
                 res.end("<h1>File not found</h1>");
