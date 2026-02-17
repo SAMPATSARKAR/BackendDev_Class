@@ -11,10 +11,10 @@ writeStream.end(()=>{
     })
     
 });
-// writeStream.on('finish',()=>{
-//     console.log("finished writing in the file");
+writeStream.on('finish',()=>{
+    console.log("finished writing in the file");
     
-// });
+});
 // readStream.on('data',(chunk)=>{
 //     console.log(chunk);
 //     console.log(chunk.length);
