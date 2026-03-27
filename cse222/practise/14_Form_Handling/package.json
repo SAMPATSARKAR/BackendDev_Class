@@ -1,0 +1,10 @@
+
+{
+  "name": "15_router",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.2.1",
+    "express-validator": "^7.3.1"
+  }
+}

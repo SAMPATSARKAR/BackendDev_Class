@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Socket Client</title>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+
+    <h2>Client</h2>
+
+    <script>
+        const socket = io();
+
+        socket.on("message", (msg) => {
+            console.log(msg);
+        });
+    </script>
+
+</body>
+
+</html>
